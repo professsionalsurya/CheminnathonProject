@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign In / Sign Up - Equipment Manager</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: "Segoe UI", sans-serif; }
+    body {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #0ea5e9, #38bdf8, #f0f9ff);
+    }
+    .container {
+      background: #ffffff;
+      padding: 2rem 2.5rem;
+      border-radius: 1rem;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+      animation: fadeInUp 0.8s ease forwards;
+    }
+    @keyframes fadeInUp { from { transform: translateY(40px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+    h2 { margin-bottom: 0.5rem; color: #0f172a; }
+    .subtitle { color: #64748b; font-size: 0.9rem; margin-bottom: 2rem; }
+    .input-group { margin-bottom: 1.25rem; text-align: left; }
+    .input-group label { display: block; margin-bottom: 0.3rem; font-size: 0.85rem; color: #334155; }
+    .input-group input {
+      width: 100%;
+      padding: 0.75rem;
+      border: 1px solid #cbd5e1;
+      border-radius: 0.5rem;
+      font-size: 0.9rem;
+      transition: all 0.3s ease;
+    }
+    .input-group input:focus {
+      border-color: #0ea5e9;
+      outline: none;
+      box-shadow: 0 0 0 4px rgba(14, 165, 233, 0.2);
+      transform: scale(1.02);
+    }
+    .btn {
+      width: 100%;
+      padding: 0.75rem;
+      background: #0ea5e9;
+      border: none;
+      border-radius: 0.5rem;
+      color: white;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    .btn:hover { background: #0284c7; transform: translateY(-2px); box-shadow: 0 6px 14px rgba(14, 165, 233, 0.4); }
+    .extra { margin-top: 1rem; font-size: 0.85rem; }
+    .extra a { color: #0ea5e9; text-decoration: none; transition: color 0.3s ease; }
+    .extra a:hover { text-decoration: underline; color: #0284c7; }
+    .form-box { display: none; }
+    .form-box.active { display: block; }
+    /* Dashboard style */
+    #dashboard { display: none; }
+    #dashboard h2 { color: #0f172a; margin-bottom: 1rem; }
+    #dashboard p { color: #334155; margin-bottom: 1.5rem; }
+  </style>
+</head>
+<body>
+  <div class="container text-center" style="margin-top:5rem;">
+    <h2>Welcome to Equipment Manager</h2>
+    <p class="subtitle">Please <a href="/login">Sign In</a> or <a href="/signup">Sign Up</a> to continue.</p>
+  </div>
+
+  <script>
+    // No JS needed; login/signup handled by Flask
+  </script>
+</body>
+</html>
